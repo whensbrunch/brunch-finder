@@ -1,0 +1,23 @@
+<!-- Restaurant map displaying all brunches -->
+<div class="center jumbotron">
+  <h1>Brunch Finder</h1>
+  <p>
+    This is the home page for a brunch finder in Buenos Aires.
+  </p>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+
+  <br>
+  <br>
+
+  <% markers = [] %>
+  <% @restaurants.each do |r| %>
+    <% markers << "markers=#{r.latitude},#{r.longitude}" %>
+  <% end %>
+  <% markers = markers.join("&") %>
+  <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?#{markers}&zoom=13&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+                class: 'img-fluid img-rounded', alt: "#{@restaurants.first.name} on the map"%>
+</div>
+
+<%#= link_to image_tag("tsitsi.png", alt: "Tsiya"),
+            'http://rubyonrails.org/' %>
