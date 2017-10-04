@@ -2,7 +2,7 @@ require 'test_helper'
 
 class RestaurantsControllerTest < ActionDispatch::IntegrationTest
   test "should get new" do
-    get restaurants_new_url
+    get new_restaurant_url
     assert_response :success
   end
 
