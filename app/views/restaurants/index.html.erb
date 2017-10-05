@@ -9,14 +9,26 @@
 
   <br>
   <br>
+  <div id="mapid">
+    <script>
+    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
 
-  <% markers = [] %>
-  <% @restaurants.each do |r| %>
-    <% markers << "markers=#{r.latitude},#{r.longitude}" %>
-  <% end %>
-  <% markers = markers.join("&") %>
-  <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?#{markers}&zoom=13&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
-                class: 'img-fluid img-rounded', alt: "#{@restaurants.first.name} on the map"%>
+    L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=sk.eyJ1Ijoid2hlbnNicnVuY2giLCJhIjoiY2o4ZHM5dGk0MHNnYzMzb2syODJoeHRhcCJ9.90qVchOiN_g4dgUDBensMA', {
+        attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox.streets',
+        accessToken: 'sk.eyJ1Ijoid2hlbnNicnVuY2giLCJhIjoiY2o4ZHM5dGk0MHNnYzMzb2syODJoeHRhcCJ9.90qVchOiN_g4dgUDBensMA'
+    }).addTo(mymap);
+    </script>
+
+    <!-- <% markers = [] %>
+    <% @restaurants.each do |r| %>
+      <% markers << "markers=#{r.latitude},#{r.longitude}" %>
+    <% end %>
+    <% markers = markers.join("&") %>
+    <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?#{markers}&zoom=13&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+                  class: 'img-fluid img-rounded', alt: "#{@restaurants.first.name} on the map"%> -->
+</div>
 </div>
 
 <%#= link_to image_tag("tsitsi.png", alt: "Tsiya"),
