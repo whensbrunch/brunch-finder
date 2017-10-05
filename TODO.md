@@ -5,6 +5,8 @@ Todo
 - tagging brunch places (bottomless, big portion size)
 - link places on map to their websites
 - random brunch selector
+- add info windows
+- mimosa icons
 
 
 ## Little fixes
