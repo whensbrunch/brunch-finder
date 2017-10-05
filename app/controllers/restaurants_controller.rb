@@ -16,9 +16,11 @@ class RestaurantsController < ApplicationController
 
     respond_to do |format|
       if @restaurant.save
+        # let's use flash
         format.html { redirect_to root_path, notice: 'Restaurant was successfully added!' }
         format.json { render :show, status: :created, location: @restaurant }
       else
+        # ditto
         format.html { render :new }
         format.json { render json: @restaurant.errors, status: :unprocessable_entity }
       end
