@@ -8,6 +8,4 @@ Todo
 
 
 ## Little fixes
-- make restaurant_params privates
 - add flash when new brunch is added
-- center map on Baires
