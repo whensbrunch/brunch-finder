@@ -8,8 +8,9 @@ Todo
 - add info windows
 - mimosa icons
 - automatically fill in brunch places
-- guess popularity based on tags 
+- guess popularity based on tags
 
 
 ## Little fixes
 - add flash when new brunch is added
+- testing for table associations

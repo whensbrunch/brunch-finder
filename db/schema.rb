@@ -23,10 +23,10 @@ ActiveRecord::Schema.define(version: 20171007035125) do
 
   create_table "taggings", force: :cascade do |t|
     t.integer "tag_id"
-    t.integer "article_id"
+    t.integer "restaurant_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["article_id"], name: "index_taggings_on_article_id"
+    t.index ["restaurant_id"], name: "index_taggings_on_restaurant_id"
     t.index ["tag_id"], name: "index_taggings_on_tag_id"
   end
 
