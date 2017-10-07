@@ -11,6 +11,7 @@ gem 'turbolinks',     '5.0.1'
 gem 'jbuilder',       '2.7.0'
 gem 'geocoder',       '1.4.4'
 gem 'leaflet-rails',  '1.2.0'
+gem 'bcrypt',         '3.1.11'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'

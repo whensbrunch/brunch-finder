@@ -1,6 +1,9 @@
 Todo
 =====
 
+## Important fixes
+- map doesn't load from new signup to home (it does appear upon refresh)
+
 ## Big features
 - tagging brunch places (bottomless, big portion size)
 - link places on map to their websites
@@ -9,6 +12,9 @@ Todo
 - mimosa icons
 - automatically fill in brunch places
 - guess popularity based on tags
+- fun form validations: https://v4-alpha.getbootstrap.com/components/forms/#validation
+- fix colors of sign up errors (get rid of blood red, use vibrant red)
+
 
 
 ## Little fixes
