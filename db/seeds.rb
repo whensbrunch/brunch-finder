@@ -10,3 +10,7 @@ Restaurant.create([
   {name: "Foodie", address: "José Antonio Cabrera 5965, Buenos Aires"},
   {name: "Alchemy", address: "Humboldt 1923, Buenos Aires, Argentina"}
 ])
+
+User.create([
+  {name: "David Stevens", email: "davidfstevens14@gmail.com"}
+])
