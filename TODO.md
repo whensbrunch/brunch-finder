@@ -7,6 +7,8 @@ Todo
 - random brunch selector
 - add info windows
 - mimosa icons
+- automatically fill in brunch places
+- guess popularity based on tags 
 
 
 ## Little fixes
