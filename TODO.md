@@ -6,6 +6,7 @@ Todo
 
 ## Big features
 - tagging brunch places (bottomless, big portion size)
+  - list tags on popup
 - link places on map to their websites
 - random brunch selector
 - add info windows
