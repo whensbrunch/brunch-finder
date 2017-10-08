@@ -1,6 +1,20 @@
 class RestaurantsController < ApplicationController
   def index
-    @restaurants = Restaurant.order('created_at DESC')
+    # Get tags for filter list
+    @tags = Tag.all
+
+    if params.has_key?(:tag)
+      # Filter by restaurants
+      @restaurants = Restaurant.joins(
+        "JOIN
+            taggings ON restaurants.id = taggings.restaurant_id
+         WHERE
+             taggings.tag_id = #{params[:tag]}"
+      )
+    else
+      # Return all restaurants
+      @restaurants = Restaurant.order('created_at DESC')
+    end
   end
 
   def show
@@ -31,4 +45,5 @@ class RestaurantsController < ApplicationController
     def restaurant_params
       params.require(:restaurant).permit(:name, :address)
     end
+
 end

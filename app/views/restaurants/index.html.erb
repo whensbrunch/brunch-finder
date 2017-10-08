@@ -7,6 +7,17 @@
 
   <!-- <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %> -->
   <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <b>Filter by tag:</b>
+      <%= form_tag "/", method: "get" do %>
+        <%= select_tag 'tag', options_from_collection_for_select(@tags, 'id', 'name') %>
+        <%= submit_tag "Filter" %>
+      <% end %>
+    </div>
+  </div>
 
   <br>
   <br>
