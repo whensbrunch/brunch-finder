@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  # TODO: remove me
+  get  '/users/greet', to: 'users#greet'
   resources :restaurants, only: [:index, :show, :new, :create]
   resources :users
   get '/signup', to: 'users#new'

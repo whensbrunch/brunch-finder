@@ -1,4 +1,11 @@
 class UsersController < ApplicationController
+  # TODO: remove. Here to learn about sessions
+  def greet
+    session[:name] = params[:name] if params[:name]
+
+    render plain: "Hello, #{session[:name]}!"
+  end
+
   def new
     @user = User.new
   end

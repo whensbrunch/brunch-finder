@@ -21,3 +21,7 @@ Todo
 ## Little fixes
 - add flash when new brunch is added
 - testing for table associations
+
+## Brunch references
+- it's not a meal, it's an institution
+- https://www.youtube.com/watch?v=RtHC29merkU
