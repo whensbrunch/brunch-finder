@@ -18,6 +18,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params) # not final
     if @user.save
       log_in @user
+      remember @user
       flash[:success] = "Welcome to Brunch Finder!"
       redirect_to @user
     else
