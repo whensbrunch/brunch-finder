@@ -11,15 +11,15 @@ Restaurant.create([
   {name: "Chicken Bros", address: "Thames 1795, Buenos Aires, Argentina"}
 ])
 
-User.create([
-  {
-    name: "David Stevens",
-    email: "davidfstevens14@gmail.com",
-    password: "foobar",
-    password_confirmation: "foobar",
-    admin: true
-  }
-])
+User.create!(
+  name: "David Stevens",
+  email: "davidfstevens14@gmail.com",
+  password: "foobar",
+  password_confirmation: "foobar",
+  admin: true,
+  activated: true,
+  activated_at: Time.zone.now
+)
 
 Tag.create([
   {name: "trendy"},
@@ -40,6 +40,8 @@ Restaurant.find_by(name: "Chicken Bros").tags << Tag.find_by(name: "bottomless m
     name: name,
     email: email,
     password: password,
-    password_confirmation: password
+    password_confirmation: password,
+    activated: true,
+    activated_at: Time.zone.now
   )
 end
