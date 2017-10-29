@@ -16,6 +16,8 @@ Todo
 - fun form validations: https://v4-alpha.getbootstrap.com/components/forms/#validation
 - fix colors of sign up errors (get rid of blood red, use vibrant red)
 - show in realtime where everyone is brunching (check-in)
+- add location / radius to search
+- allow users to add reviews / favorites
 
 
 

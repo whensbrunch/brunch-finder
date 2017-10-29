@@ -11,13 +11,25 @@ $( document ).ready(function() {
          accessToken: 'sk.eyJ1Ijoid2hlbnNicnVuY2giLCJhIjoiY2o4ZHM5dGk0MHNnYzMzb2syODJoeHRhcCJ9.90qVchOiN_g4dgUDBensMA'
     }).addTo(mymap);
 
-    // print the name of each restaurant
     for (i = 0; i < coordinates.length; i++) {
-      var marker = L.marker(
-        [coordinates[i].latitude, coordinates[i].longitude],
-        {title: coordinates[i].name}
-      )
-      marker.addTo(mymap);
-      marker.bindPopup('<b>' + coordinates[i].name + '</b>')
+      console.log(coordinates[i].name)
+      if (coordinates[i].latitude && coordinates[i].longitude)
+        var marker = L.marker(
+          [coordinates[i].latitude, coordinates[i].longitude],
+          {title: coordinates[i].name}
+        )
+        marker.addTo(mymap);
+        marker.bindPopup(
+          '<b>' +
+          coordinates[i].name +
+          '</b><br>' +
+          coordinates[i].rating +
+          '<br>' +
+          coordinates[i].review_count +
+          '<br>' +
+          coordinates[i].address +
+          '<br>' +
+          coordinates[i].price
+        )
     }
 });

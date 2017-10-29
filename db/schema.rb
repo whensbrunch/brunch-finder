@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171025220645) do
+ActiveRecord::Schema.define(version: 20171029003748) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
@@ -19,6 +19,10 @@ ActiveRecord::Schema.define(version: 20171025220645) do
     t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "price"
+    t.integer "review_count"
+    t.float "rating"
+    t.string "barrio"
   end
 
   create_table "taggings", force: :cascade do |t|

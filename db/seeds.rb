@@ -1,15 +1,24 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-Restaurant.create([
-  {name: "Pani", address: "Nicaragua 6044, Buenos Aires, Argentina"},
-  {name: "Brandon", address: "Fitz Roy 1722, Buenos Aires"},
-  {name: "Chicken Bros", address: "Thames 1795, Buenos Aires, Argentina"}
-])
+require 'csv'
+
+# TODO: remove entries with nil lat / lng
+
+seeds_path = Rails.root.join("lib", "seeds", "brunch_places.csv")
+CSV.foreach(seeds_path, headers: true) do |row|
+  Restaurant.create(
+    name: row['name'],
+    address: row['address'],
+    price: row['price'],
+    barrio: row['barrio'],
+    review_count: row['review_count'],
+    rating: row['rating']
+  )
+  puts 'Created ' + row['name']
+end
+
+Restaurant.create(
+  name: "Chicken Bros",
+  address: "Thames 1795, Buenos Aires, Argentina"
+)
 
 User.create!(
   name: "David Stevens",
@@ -27,10 +36,10 @@ Tag.create([
   {name: "cheto"}
 ])
 
-Restaurant.find_by(name: "Pani").tags << Tag.find_by(name: "trendy")
-Restaurant.find_by(name: "Pani").tags << Tag.find_by(name: "cheto")
-Restaurant.find_by(name: "Brandon").tags << Tag.find_by(name: "cheto")
-Restaurant.find_by(name: "Chicken Bros").tags << Tag.find_by(name: "bottomless mimosas")
+# Restaurant.find_by(name: "Pani").tags << Tag.find_by(name: "trendy")
+# Restaurant.find_by(name: "Pani").tags << Tag.find_by(name: "cheto")
+# Restaurant.find_by(name: "Brandon").tags << Tag.find_by(name: "cheto")
+# Restaurant.find_by(name: "Chicken Bros").tags << Tag.find_by(name: "bottomless mimosas")
 
 99.times do |n|
   name = Faker::Name.name

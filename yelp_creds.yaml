@@ -1,0 +1,892 @@
+# yelp credentials
+client_id: bLEpPIOInphQ4bsDVRCHfg
+client_secret: iyWdTuGqdGblpiByO65Sc4f1mH32eS4r4QdYgmHrwC4XbnypXjc7hAqnRhSMe82i
+access_token: zsnAhfq0Ihsl2pGJAAy7DQe5nYvl1p9DEcDbRVwcdFIoOA46-_yCobG5WVyUjPxjsZv3OdkOmFazVF6zNhRFOvqVAGjr8lZcPtb2WlS64DuhbERDk66tk4Ft7CfxWXYx
+
+# To authenticate API calls with the access token, set the Authorization HTTP
+# header value as Bearer ACCESS_TOKEN.
+{
+    "businesses": [
+        {
+            "id": "victoria-brown-buenos-aires",
+            "name": "Victoria Brown",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/grxn-3IQT2frikzhjJx5Sg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/victoria-brown-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 175,
+            "categories": [
+                {
+                    "alias": "cocktailbars",
+                    "title": "Cocktail Bars"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5871690660812,
+                "longitude": -58.4283181085092
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Costa Rica 4821",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "C1414BSM",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Costa Rica 4821",
+                    "C1414BSM Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541148310831",
+            "display_phone": "+54 11 4831-0831",
+            "distance": 1086.9693183539998
+        },
+        {
+            "id": "la-alacena-buenos-aires",
+            "name": "La Alacena",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/IYi2cQrY1ALwCSExYQrYyg/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/la-alacena-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 60,
+            "categories": [
+                {
+                    "alias": "cafeteria",
+                    "title": "Cafeteria"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5940553,
+                "longitude": -58.4226472
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Gascón 1401",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "C1181",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Gascón 1401",
+                    "C1181 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541148672549",
+            "display_phone": "+54 11 4867-2549",
+            "distance": 1112.163455587
+        },
+        {
+            "id": "café-crespín-buenos-aires",
+            "name": "Café Crespín",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/8FHSODIG4E6QW_BW2csR4Q/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/caf%C3%A9-cresp%C3%ADn-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 111,
+            "categories": [
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                },
+                {
+                    "alias": "cafeteria",
+                    "title": "Cafeteria"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5972593,
+                "longitude": -58.4393309
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Vera 699",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "1414",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Vera 699",
+                    "1414 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541148553771",
+            "display_phone": "+54 11 4855-3771",
+            "distance": 459.78766551679996
+        },
+        {
+            "id": "home-bar-y-restaurant-buenos-aires",
+            "name": "Home Bar & Restaurant",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nL8CCV3l4zCEanTz4eicsQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/home-bar-y-restaurant-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 32,
+            "categories": [
+                {
+                    "alias": "bars",
+                    "title": "Bars"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                },
+                {
+                    "alias": "international",
+                    "title": "International"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": -34.582073,
+                "longitude": -58.438940420795
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "Home Hotel",
+                "address2": "Honduras 5860",
+                "address3": null,
+                "city": "Buenos Aires",
+                "zip_code": "",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Home Hotel",
+                    "Honduras 5860",
+                    "Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541147781008",
+            "display_phone": "+54 11 4778-1008",
+            "distance": 1516.7225634669999
+        },
+        {
+            "id": "l-orangerie-buenos-aires",
+            "name": "L'Orangerie",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/kSrMU4cnmDKW3Zy4_paZ1Q/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/l-orangerie-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 16,
+            "categories": [
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                },
+                {
+                    "alias": "tea",
+                    "title": "Tea Rooms"
+                }
+            ],
+            "rating": 5,
+            "coordinates": {
+                "latitude": -34.5876671736576,
+                "longitude": -58.3889474840267
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "Alvear Palace Hotel",
+                "address2": "Av. Alvear 1891",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "1129",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Alvear Palace Hotel",
+                    "Av. Alvear 1891",
+                    "1129 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541148082949",
+            "display_phone": "+54 11 4808-2949",
+            "distance": 4291.88286306
+        },
+        {
+            "id": "birkin-buenos-aires-2",
+            "name": "Birkin",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/HkToLE4RoH3D5TdO7FJteQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/birkin-buenos-aires-2?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 9,
+            "categories": [
+                {
+                    "alias": "cafeteria",
+                    "title": "Cafeteria"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": -34.5782045932645,
+                "longitude": -58.437867499888
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "Nicaragua 6025",
+                "address2": "",
+                "address3": null,
+                "city": "Buenos Aires",
+                "zip_code": "C1414",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Nicaragua 6025",
+                    "C1414 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "",
+            "display_phone": "",
+            "distance": 1920.36587642
+        },
+        {
+            "id": "cocu-buenos-aires",
+            "name": "Cocu",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/nsA9qNtz80DkVvPVdHd-5g/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/cocu-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 95,
+            "categories": [
+                {
+                    "alias": "cafeteria",
+                    "title": "Cafeteria"
+                },
+                {
+                    "alias": "french",
+                    "title": "French"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5913469,
+                "longitude": -58.4279858
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Malabia 1510",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "C1414DMF",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Malabia 1510",
+                    "C1414DMF Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541148314675",
+            "display_phone": "+54 11 4831-4675",
+            "distance": 771.167725484
+        },
+        {
+            "id": "cafe-blues-buenos-aires",
+            "name": "Cafe Blue's",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/iAY1GT5B4-W_YHr8oo0AYA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/cafe-blues-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 2,
+            "categories": [
+                {
+                    "alias": "cafeteria",
+                    "title": "Cafeteria"
+                },
+                {
+                    "alias": "tapas",
+                    "title": "Tapas Bars"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 5,
+            "coordinates": {
+                "latitude": -34.5907697325406,
+                "longitude": -58.4063572436571
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Arenales 2932",
+                "address2": "",
+                "address3": null,
+                "city": "Buenos Aires",
+                "zip_code": "C1425",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Arenales 2932",
+                    "C1425 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541120886497",
+            "display_phone": "+54 11 2088-6497",
+            "distance": 2661.425586382
+        },
+        {
+            "id": "brandon-buenos-aires-2",
+            "name": "Brandon",
+            "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/xfkCNUqdFnZ1biKxxnLAfA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/brandon-buenos-aires-2?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 83,
+            "categories": [
+                {
+                    "alias": "cocktailbars",
+                    "title": "Cocktail Bars"
+                },
+                {
+                    "alias": "beerbar",
+                    "title": "Beer Bar"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.58391,
+                "longitude": -58.43611
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "Fitz Roy 1722",
+                "address2": null,
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "C1414",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Fitz Roy 1722",
+                    "C1414 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541147762014",
+            "display_phone": "+54 11 4776-2014",
+            "distance": 1264.1686924264
+        },
+        {
+            "id": "malvón-buenos-aires-2",
+            "name": "Malvón",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/QGm1VjJxn-RvYNLTEKqzHQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/malv%C3%B3n-buenos-aires-2?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 119,
+            "categories": [
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                },
+                {
+                    "alias": "desserts",
+                    "title": "Desserts"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": -34.5942571,
+                "longitude": -58.4390272
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Serrano 789",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "C1425DEO",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Serrano 789",
+                    "C1425DEO Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541147742563",
+            "display_phone": "+54 11 4774-2563",
+            "distance": 394.61311309219997
+        },
+        {
+            "id": "adorado-buenos-aires-2",
+            "name": "Adorado",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Uc4k1OWdV8oIhgLi_vpHOQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/adorado-buenos-aires-2?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 39,
+            "categories": [
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                },
+                {
+                    "alias": "cafeteria",
+                    "title": "Cafeteria"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5799232651377,
+                "longitude": -58.4357794001698
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Nicaragua 5856",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "1414",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Nicaragua 5856",
+                    "1414 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541147756625",
+            "display_phone": "+54 11 4775-6625",
+            "distance": 1712.140133048
+        },
+        {
+            "id": "méli-mélo-buenos-aires",
+            "name": "Méli Mélo",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/epwsG-Y90deD9hPePKlcwA/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/m%C3%A9li-m%C3%A9lo-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 19,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": -34.5568444787995,
+                "longitude": -58.4476976853194
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Av. del Libertador 5990",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "C1428ARP",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Av. del Libertador 5990",
+                    "C1428ARP Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541147883926",
+            "display_phone": "+54 11 4788-3926",
+            "distance": 4433.964410564
+        },
+        {
+            "id": "croque-madame-buenos-aires-4",
+            "name": "Croque Madame",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/_9hsdnKUqXjo1-Rzl6lCrQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/croque-madame-buenos-aires-4?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 53,
+            "categories": [
+                {
+                    "alias": "desserts",
+                    "title": "Desserts"
+                },
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5609293,
+                "longitude": -58.4561092
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Vuelta de Obligado 2155",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "1428",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Vuelta de Obligado 2155",
+                    "1428 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541147890866",
+            "display_phone": "+54 11 4789-0866",
+            "distance": 4286.8850576899995
+        },
+        {
+            "id": "farinelli-buenos-aires-2",
+            "name": "Farinelli",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/uuinYyXOu9CI0DAtY8I-4w/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/farinelli-buenos-aires-2?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 29,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                },
+                {
+                    "alias": "bagels",
+                    "title": "Bagels"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5914721,
+                "longitude": -58.3801317
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Arroyo 900",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Arroyo 900",
+                    "Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541143287998",
+            "display_phone": "+54 11 4328-7998",
+            "distance": 5031.9475181
+        },
+        {
+            "id": "harturo-buenos-aires",
+            "name": "Harturo",
+            "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/XAAzQVWXighud62tKq3Iig/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/harturo-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 15,
+            "categories": [
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5921211,
+                "longitude": -58.3897018
+            },
+            "transactions": [],
+            "price": "$$$",
+            "location": {
+                "address1": "Vicente Lopez 1662",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "C1018",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Vicente Lopez 1662",
+                    "C1018 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541148135900",
+            "display_phone": "+54 11 4813-5900",
+            "distance": 4143.270452901999
+        },
+        {
+            "id": "ninina-buenos-aires",
+            "name": "Ninina",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/VxRM01Mun4E0nTWher8pSw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/ninina-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 200,
+            "categories": [
+                {
+                    "alias": "cafeteria",
+                    "title": "Cafeteria"
+                },
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                },
+                {
+                    "alias": "cakeshop",
+                    "title": "Patisserie/Cake Shop"
+                }
+            ],
+            "rating": 3.5,
+            "coordinates": {
+                "latitude": -34.5912701346991,
+                "longitude": -58.4283952787518
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Gorriti 4738",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "1414",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Gorriti 4738",
+                    "1414 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541148320070",
+            "display_phone": "+54 11 4832-0070",
+            "distance": 745.854738492
+        },
+        {
+            "id": "panachef-buenos-aires",
+            "name": "Panachef",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/0B-3HKl-vQnmqeIiPEfxsQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/panachef-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 34,
+            "categories": [
+                {
+                    "alias": "burgers",
+                    "title": "Burgers"
+                },
+                {
+                    "alias": "latin",
+                    "title": "Latin American"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                }
+            ],
+            "rating": 4.5,
+            "coordinates": {
+                "latitude": -34.5934,
+                "longitude": -58.41184
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Sánchez de Bustamante 1470",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "C1425",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Sánchez de Bustamante 1470",
+                    "C1425 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541149613782",
+            "display_phone": "+54 11 4961-3782",
+            "distance": 2109.1575518199998
+        },
+        {
+            "id": "tipo-siete-buenos-aires",
+            "name": "Tipo Siete",
+            "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/1ksJP6ilI_59zjKjcLHVdw/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/tipo-siete-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 28,
+            "categories": [
+                {
+                    "alias": "coffee",
+                    "title": "Coffee & Tea"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5919041507147,
+                "longitude": -58.4311559120412
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Armenia 1315",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "C1414DKC",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Armenia 1315",
+                    "C1414DKC Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+545447756908",
+            "display_phone": "+54 5447756908",
+            "distance": 510.5437063596
+        },
+        {
+            "id": "la-trufa-buenos-aires",
+            "name": "La Trufa",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/eFeP_Qj_v26ZwFkRnTqkzQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/la-trufa-buenos-aires?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 22,
+            "categories": [
+                {
+                    "alias": "bakeries",
+                    "title": "Bakeries"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                },
+                {
+                    "alias": "cafeteria",
+                    "title": "Cafeteria"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.5793715,
+                "longitude": -58.4544612
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Av. Álvarez Thomas 869",
+                "address2": "",
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "1426",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Av. Álvarez Thomas 869",
+                    "1426 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541145549434",
+            "display_phone": "+54 11 4554-9434",
+            "distance": 2518.315026882
+        },
+        {
+            "id": "oldays-buenos-aires-4",
+            "name": "Ol'days",
+            "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/qjgaavYACUZkAPQxo1e5PQ/o.jpg",
+            "is_closed": false,
+            "url": "https://www.yelp.com/biz/oldays-buenos-aires-4?adjust_creative=bLEpPIOInphQ4bsDVRCHfg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=bLEpPIOInphQ4bsDVRCHfg",
+            "review_count": 32,
+            "categories": [
+                {
+                    "alias": "cafeteria",
+                    "title": "Cafeteria"
+                },
+                {
+                    "alias": "breakfast_brunch",
+                    "title": "Breakfast & Brunch"
+                },
+                {
+                    "alias": "juicebars",
+                    "title": "Juice Bars & Smoothies"
+                }
+            ],
+            "rating": 4,
+            "coordinates": {
+                "latitude": -34.6111751908229,
+                "longitude": -58.3634124386231
+            },
+            "transactions": [],
+            "price": "$$",
+            "location": {
+                "address1": "Olga Cossettini 1182",
+                "address2": null,
+                "address3": "",
+                "city": "Buenos Aires",
+                "zip_code": "1107",
+                "country": "AR",
+                "state": "C",
+                "display_address": [
+                    "Olga Cossettini 1182",
+                    "1107 Buenos Aires",
+                    "Argentina"
+                ]
+            },
+            "phone": "+541157750317",
+            "display_phone": "+54 11 5775-0317",
+            "distance": 6777.434463419999
+        }
+    ],
+    "total": 523,
+    "region": {
+        "center": {
+            "longitude": -58.4349060059,
+            "latitude": -34.5953025616
+        }
+    }
+}
