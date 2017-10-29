@@ -18,12 +18,17 @@ Todo
 - show in realtime where everyone is brunching (check-in)
 - add location / radius to search
 - allow users to add reviews / favorites
-
+- search by name
+- include review feed from all users on homepage
 
 
 ## Little fixes
 - add flash when new brunch is added
 - testing for table associations
+- section 13.3.5: review tests (didn't feel like it oop)
+- center on current location (button for recenter like google maps)
+- choose file button should be rounded and cute
+- gifs everywhere
 
 ## Brunch references
 - it's not a meal, it's an institution

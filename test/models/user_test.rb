@@ -3,7 +3,7 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
   def setup
     @user = User.new(
-      name: "Michael Bubke",
+      name: "Michael Buble",
       email: "havent@metyouyet.com",
       password: "foobar",
       password_confirmation: "foobar"
@@ -72,4 +72,15 @@ class UserTest < ActiveSupport::TestCase
   test "authenticated? should return false for a user with nil digest" do
     assert_not @user.authenticated?(:remember, '')
   end
+
+  # test "associated reviews should be destroyed" do
+  #   @user.save
+  #   @user.reviews.create!(
+  #     content: "Lorem ipsum",
+  #     restaurant_id: 1
+  #   )
+  #   assert_difference 'Review.count', -1 do
+  #     @user.destroy
+  #   end
+  # end
 end

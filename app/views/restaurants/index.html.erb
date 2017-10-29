@@ -1,31 +1,34 @@
 <!-- Restaurant map displaying all brunches -->
-<div class="center jumbotron">
-  <h1>Brunch Finder</h1>
-  <p>
-    This is the home page for a brunch finder in Buenos Aires.
-  </p>
-
-  <!-- <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %> -->
-  <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %>
-  <br>
-  <br>
+<% if logged_in? %>
   <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <b>Filter by tag:</b>
-      <%= form_tag "/", method: "get" do %>
-        <%= select_tag 'tag', options_from_collection_for_select(@tags, 'id', 'name') %>
-        <%= submit_tag "Filter" %>
+    <aside class="col-md-4">
+      <section class="user_info">
+        <%= render 'shared/user_info' %>
+      </section>
+      <section class="review_form">
+        <%= render 'shared/review_form' %>
+      </section>
+    </aside>
+    <div class="col-md-8">
+      <div class="center jumbotron">
+      <h1>Brunch Finder</h1>
+      <p>
+        This is the home page for a brunch finder in Buenos Aires.
+      </p>
+
+      <!-- <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %> -->
+      <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %>
+      <br>
+      <br>
+      <% javascript_include_tag "restaurants_to_map" %>
+      <%= content_tag :div , id: "coordinates-div", data: {coordinates: @restaurants} do %>
       <% end %>
+      <div id="map"></div>
+    </div>
     </div>
   </div>
-
-  <br>
-  <br>
-  <% javascript_include_tag "restaurants_to_map" %>
-  <%= content_tag :div , id: "coordinates-div", data: {coordinates: @restaurants} do %>
-  <% end %>
-  <div id="map"></div>
-</div>
-
+<% else %>
+  <%= render 'map' %>
+<% end %>
 <%#= link_to image_tag("tsitsi.png", alt: "Tsiya"),
             'http://rubyonrails.org/' %>

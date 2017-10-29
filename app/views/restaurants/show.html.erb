@@ -1,7 +1,22 @@
-<header><h1 class="display-4"><%= @restaurant.name %></h1></header>
-
-<p>Address: <%= @restaurant.address %></p>
-<p>Coordinates: <%= @restaurant.latitude %> <%= @restaurant.longitude %></p>
-
-<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@restaurant.latitude},#{@restaurant.longitude}&markers=#{@restaurant.latitude},#{@restaurant.longitude}&zoom=13&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
-              class: 'img-fluid img-rounded', alt: "#{@restaurant.name} on the map"%>
+<% provide :title, @restaurant.name %>
+<div class="row">
+  <aside class="col-md-4">
+    <section>
+      <h1>
+        <%= @restaurant.name %>
+        <%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@restaurant.latitude},#{@restaurant.longitude}&markers=#{@restaurant.latitude},#{@restaurant.longitude}&zoom=13&size=640x400&key=AIzaSyA4BHW3txEdqfxzdTlPwaHsYRSZbfeIcd8",
+                      class: 'img-fluid img-rounded', alt: "#{@restaurant.name} on the map"%>
+      </h1>
+      <p>Address: <%= @restaurant.address %></p>
+    </section>
+  </aside>
+  <div class="col-md-8">
+  <% if @restaurant.reviews.any? %>
+    <h3> Reviews (<%= @restaurant.reviews.count %>)</h3>
+    <ol class="reviews">
+      <%= render @reviews %>
+    </ol>
+    <%= will_paginate @reviews %>
+  <% end %>
+  </div>
+</div>

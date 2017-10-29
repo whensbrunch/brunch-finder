@@ -1,4 +1,5 @@
 class Restaurant < ApplicationRecord
+  has_many :reviews, dependent: :destroy
   geocoded_by :address
   has_many :taggings
   has_many :tags, through: :taggings

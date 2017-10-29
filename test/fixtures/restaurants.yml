@@ -1,5 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+example:
+  name: Brunch Paradise
+  address: Humboldt 1945 Buenos Aires Argentina
+  latitude: 1.5
+  longitude: 1.5
+  price: $$
+  review_count: 100
+  rating: 5
+  barrio: Palermo
+
 one:
   name: MyString
   address: MyString

@@ -14,11 +14,13 @@ class RestaurantsController < ApplicationController
     else
       # Return all restaurants
       @restaurants = Restaurant.order('created_at DESC')
+      @review = current_user.reviews.build if logged_in?
     end
   end
 
   def show
     @restaurant = Restaurant.find(params[:id])
+    @reviews = @restaurant.reviews.paginate(page: params[:page])
   end
 
   def new
