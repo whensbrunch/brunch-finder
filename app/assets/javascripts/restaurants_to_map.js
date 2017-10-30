@@ -18,10 +18,15 @@ $( document ).ready(function() {
           [coordinates[i].latitude, coordinates[i].longitude],
           {title: coordinates[i].name}
         )
+        var a = document.createElement('a');
+        restaurant_path = '/restaurants/' + coordinates[i].id;
+        a.setAttribute('href', restaurant_path);
+        a.innerHTML = coordinates[i].name;
+
         marker.addTo(mymap);
         marker.bindPopup(
           '<b>' +
-          coordinates[i].name +
+          a.outerHTML +
           '</b><br>' +
           coordinates[i].rating +
           '<br>' +
@@ -30,6 +35,6 @@ $( document ).ready(function() {
           coordinates[i].address +
           '<br>' +
           coordinates[i].price
-        )
+        );
     }
 });
