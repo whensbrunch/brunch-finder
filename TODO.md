@@ -7,8 +7,6 @@ Todo
 ## Big features
 - tagging brunch places (bottomless, big portion size)
   - list tags on popup
-- link places on map to their websites
-- random brunch selector
 - add info windows
 - mimosa icons
 - automatically fill in brunch places
@@ -29,6 +27,7 @@ Todo
 - center on current location (button for recenter like google maps)
 - choose file button should be rounded and cute
 - gifs everywhere
+- start typing restaurant name and it will autopopulate in review text_field
 
 ## Brunch references
 - it's not a meal, it's an institution
