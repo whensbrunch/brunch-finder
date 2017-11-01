@@ -1,4 +1,6 @@
 class RestaurantsController < ApplicationController
+  before_action :force_json, only: :search
+
   def index
     # Get tags for filter list
     @tags = Tag.all
@@ -43,9 +45,20 @@ class RestaurantsController < ApplicationController
     end
   end
 
+  def search
+    @restaurants = Restaurant.where("name LIKE ?", "%#{params[:q]}%").limit(5)
+    # render json: {
+    #   restaurants: []
+    # }
+  end
+
   private
     def restaurant_params
       params.require(:restaurant).permit(:name, :address)
+    end
+
+    def force_json
+      request.format = :json
     end
 
 end

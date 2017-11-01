@@ -7,6 +7,7 @@ class Review < ApplicationRecord
   validates :content, presence: true
   validate  :picture_size # use validate for custom validation
   mount_uploader :picture, PictureUploader
+  attr_accessor :restaurant_name # HACK
 
   private
 
