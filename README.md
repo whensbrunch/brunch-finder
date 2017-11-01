@@ -1,4 +1,4 @@
-Brunch Finder - Buenos Aires
+Brunch Finder - Buenos Aires https://travis-ci.org/whensbrunch/brunch-finder.svg?branch=master
 ========
 
 _Find the brunch you deserve_
