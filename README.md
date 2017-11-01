@@ -13,7 +13,7 @@ To run the development environment for this project you will need to have [Git](
 
 ## Contributing
 
-[![Travis](https://img.shields.io/travis/brunch-finder/master.svg)](https://travis-ci.org/whensbrunch/brunch-finder.svg?branch=master)
+[![Travis](https://travis-ci.org/whensbrunch/brunch-finder.svg)](https://travis-ci.org/whensbrunch/brunch-finder)
 
 Contributions are welcome via pull requests and issues.
 
