@@ -6,8 +6,6 @@ Rails.application.routes.draw do
 
   get 'sessions/new'
 
-  # TODO: remove me
-  get  '/users/greet', to: 'users#greet'
   resources :restaurants, only: [:index, :show, :new, :create]
   resources :users
   get '/signup', to: 'users#new'
@@ -31,4 +29,7 @@ Rails.application.routes.draw do
 
   # Micropost routes
   resources :reviews, only: [:create, :destroy]
+
+  # Search route
+  get :search, controller: :restaurants
 end

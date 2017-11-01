@@ -1,7 +1,8 @@
 <%= form_for(@review) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-    <%= f.text_field :restaurant_id, placeholder: "Gimme a restaurant id" %>
+    <%= f.text_field :restaurant_name, placeholder: "Start typing a restaurant...", 'data-behavior': :autocomplete %>
+    <%= f.hidden_field :restaurant_id %>
     <%= f.text_area :content, placeholder: "How was your last brunch?" %>
   </div>
   <%= f.submit "Post", class: "btn btn-primary" %>

@@ -17,3 +17,4 @@
 //= require turbolinks
 //= require_tree .
 //= require leaflet
+//= require jquery.easy-autocomplete
