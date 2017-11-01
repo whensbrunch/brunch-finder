@@ -1,6 +1,4 @@
-# Brunch Finder - Buenos Aires
-
-[![Travis](https://img.shields.io/travis/brunch-finder/master.svg)](https://travis-ci.org/whensbrunch/brunch-finder.svg?branch=master)
+Brunch Finder - Buenos Aires
 ========
 
 _Find the brunch you deserve_
@@ -14,6 +12,8 @@ To run the development environment for this project you will need to have [Git](
 - [Frequently Asked Questions](#frequently-asked-questions)
 
 ## Contributing
+
+[![Travis](https://img.shields.io/travis/brunch-finder/master.svg)](https://travis-ci.org/whensbrunch/brunch-finder.svg?branch=master)
 
 Contributions are welcome via pull requests and issues.
 
