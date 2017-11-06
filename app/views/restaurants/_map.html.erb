@@ -6,7 +6,14 @@
   </p>
 
   <!-- <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %> -->
-  <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %>
+  <!-- <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %> -->
+  <!-- Form: text_field + hidden field, send to ?? -->
+  <%= form_tag 'restaurant#index', method: "get" do %>
+    <%= label_tag('query', "Search for:") %>
+    <%= text_field_tag 'query', nil, placeholder: "Start typing a restaurant...", 'data-behavior': :autocomplete %>
+    <%= submit_tag "Search", class: "btn btn-primary" %>
+  <% end %>
+  <br>
   <br>
   <br>
   <% javascript_include_tag "restaurants_to_map" %>
