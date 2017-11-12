@@ -13,6 +13,8 @@ To run the development environment for this project you will need to have [Git](
 
 ## Contributing
 
+[![Travis](https://travis-ci.org/whensbrunch/brunch-finder.svg)](https://travis-ci.org/whensbrunch/brunch-finder)
+
 Contributions are welcome via pull requests and issues.
 
 ## Getting started
