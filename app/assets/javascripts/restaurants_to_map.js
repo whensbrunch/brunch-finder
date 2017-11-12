@@ -11,30 +11,59 @@ $( document ).ready(function() {
          accessToken: 'sk.eyJ1Ijoid2hlbnNicnVuY2giLCJhIjoiY2o4ZHM5dGk0MHNnYzMzb2syODJoeHRhcCJ9.90qVchOiN_g4dgUDBensMA'
     }).addTo(mymap);
 
-    for (i = 0; i < coordinates.length; i++) {
-      console.log(coordinates[i].name)
-      if (coordinates[i].latitude && coordinates[i].longitude)
+    // multiple restaurants to map
+    if (coordinates instanceof Array) {
+      for (i = 0; i < coordinates.length; i++) {
+        console.log(coordinates[i].name)
+
+        if (coordinates[i].latitude && coordinates[i].longitude)
+          var marker = L.marker(
+            [coordinates[i].latitude, coordinates[i].longitude],
+            {title: coordinates[i].name}
+          )
+          var a = document.createElement('a');
+          restaurant_path = '/restaurants/' + coordinates[i].id;
+          a.setAttribute('href', restaurant_path);
+          a.innerHTML = coordinates[i].name;
+
+          marker.addTo(mymap);
+          marker.bindPopup(
+            '<b>' +
+            a.outerHTML +
+            '</b><br>' +
+            coordinates[i].rating +
+            '<br>' +
+            coordinates[i].review_count +
+            '<br>' +
+            coordinates[i].address +
+            '<br>' +
+            coordinates[i].price
+          );
+      }
+    } else { // only one restaurant to map
+      console.log(coordinates.name)
+      if (coordinates.latitude && coordinates.longitude)
         var marker = L.marker(
-          [coordinates[i].latitude, coordinates[i].longitude],
-          {title: coordinates[i].name}
+          [coordinates.latitude, coordinates.longitude],
+          {title: coordinates.name}
         )
         var a = document.createElement('a');
-        restaurant_path = '/restaurants/' + coordinates[i].id;
+        restaurant_path = '/restaurants/' + coordinates.id;
         a.setAttribute('href', restaurant_path);
-        a.innerHTML = coordinates[i].name;
+        a.innerHTML = coordinates.name;
 
         marker.addTo(mymap);
         marker.bindPopup(
           '<b>' +
           a.outerHTML +
           '</b><br>' +
-          coordinates[i].rating +
+          coordinates.rating +
           '<br>' +
-          coordinates[i].review_count +
+          coordinates.review_count +
           '<br>' +
-          coordinates[i].address +
+          coordinates.address +
           '<br>' +
-          coordinates[i].price
+          coordinates.price
         );
     }
 });
