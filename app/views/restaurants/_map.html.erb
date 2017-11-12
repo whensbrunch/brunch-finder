@@ -6,13 +6,13 @@
   </p>
 
   <!-- <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %> -->
-  <!-- <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %> -->
-  <!-- Form: text_field + hidden field, send to ?? -->
-  <%= form_tag 'restaurant#index', method: "get" do %>
-    <%= label_tag('query', "Search for:") %>
-    <%= text_field_tag 'query', nil, placeholder: "Start typing a restaurant...", 'data-behavior': :autocomplete %>
-    <%= submit_tag "Search", class: "btn btn-primary" %>
-  <% end %>
+  <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %>
+  <form class="" action="/restaurants" method="get">
+    <input type="text" name="restaurant[name]" placeholder="Search for a restaurant...", data-behavior="find", value="">
+    <input type="hidden" name="restaurant[id]" id="find_restaurant_id" value="">
+    <input type="submit" name="commit" value="Search" class="btn btn-primary">
+  </form>
+  <br>
   <br>
   <br>
   <br>

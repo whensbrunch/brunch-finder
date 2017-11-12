@@ -30,6 +30,9 @@ Rails.application.routes.draw do
   # Micropost routes
   resources :reviews, only: [:create, :destroy]
 
-  # Search route
+  # Search route for restaurant reviews
   get :search, controller: :restaurants
+
+  # Search route for map
+  get :find, controller: :restaurants
 end

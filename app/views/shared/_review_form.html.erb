@@ -11,6 +11,40 @@
   </span>
 <% end %>
 
+<!-- # <%= form_for(@review) do |f| %>
+#   <%= render 'shared/error_messages', object: f.object %>
+#   <div class="field">
+#     <%= f.text_field :restaurant_name, id: "review_restaurant_address", placeholder: "Start typing a restaurant...", 'data-behavior': :find %>
+#     <%= f.hidden_field :restaurant_id %>
+#     <%= f.text_area :content, placeholder: "How was your last brunch?" %>
+#   </div>
+#   <%= f.submit "Post", class: "btn btn-primary" %>
+#   <span class="picture">
+#     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
+#   </span>
+# <% end %> -->
+
+<!-- <form class="" action="/restaurants" method="get">
+  <input type="text" name="restaurant[name]" placeholder="Search for a restaurant...", data-behavior="find", value="">
+  <input type="hidden" name="restaurant[id]" id="find_restaurant_id" value="">
+  <input type="submit" name="commit" value="Search" class="btn btn-primary">
+</form> -->
+
+<!-- <form class="find_restaurant"
+      id="find_restaurant"
+      enctype="multipart/form-data"
+      action="/restaurants"
+      accept-charset="UTF-8"
+      method="get">
+  <input type="text"
+         name="restaurant[name]"
+         placeholder="Search for a restaurant..."
+         data-action="autocomplete"
+         value="">
+  <input type="hidden" name="restaurant[id]" id="find_restaurant_id" value="">
+  <input type="submit" name="commit" value="Search" class="btn btn-primary">
+</form> -->
+
 <script type="text/javascript">
   $('#review_picture').bind('change', function() {
     var size_in_megabytes = this.files[0].size/1024/1024;

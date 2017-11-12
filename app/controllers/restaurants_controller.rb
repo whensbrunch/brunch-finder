@@ -1,5 +1,5 @@
 class RestaurantsController < ApplicationController
-  before_action :force_json, only: :search
+  before_action :force_json, only: [:search, :find]
 
   def index
     # Get tags for filter list
@@ -13,11 +13,14 @@ class RestaurantsController < ApplicationController
          WHERE
              taggings.tag_id = #{params[:tag]}"
       )
+    elsif params.has_key?(:restaurant)
+      # Filter to only that restaurant
+      @restaurants = Restaurant.find(params[:restaurant][:id])
     else
       # Return all restaurants
       @restaurants = Restaurant.order('created_at DESC')
-      @review = current_user.reviews.build if logged_in?
     end
+    @review = current_user.reviews.build if logged_in?
   end
 
   def show
@@ -47,9 +50,10 @@ class RestaurantsController < ApplicationController
 
   def search
     @restaurants = Restaurant.where("name LIKE ?", "%#{params[:q]}%").limit(5)
-    # render json: {
-    #   restaurants: []
-    # }
+  end
+
+  def find
+    @restaurants = Restaurant.where("name LIKE ?", "%#{params[:q]}%").limit(5)
   end
 
   private

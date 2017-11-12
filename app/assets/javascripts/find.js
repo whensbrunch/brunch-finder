@@ -1,11 +1,11 @@
 $( document ).ready(function() {
-  console.log('Event listener called for search');
-  $input = $("[data-behavior='autocomplete']");
+  console.log('Event listener called for find');
+  $find = $("[data-behavior='find']");
 
   var options = {
 
     url: function(phrase) {
-      return "/search.json?q=" + phrase;
+      return "/find.json?q=" + phrase;
     },
 
     getValue: "name",
@@ -27,15 +27,15 @@ $( document ).ready(function() {
     list: {
       onChooseEvent: function() {
         // get id of user selection
-        var id = $input.getSelectedItemData().id
+        var id = $find.getSelectedItemData().id
         console.log(id)
 
         // place it in hidden field
-        var hiddenField = document.getElementById('review_restaurant_id');
+        var hiddenField = document.getElementById('find_restaurant_id');
         hiddenField.value = id;
       }
     }
   };
 
-  $input.easyAutocomplete(options);
+  $find.easyAutocomplete(options);
 });
