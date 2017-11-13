@@ -6,7 +6,7 @@
   </p>
 
   <!-- <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %> -->
-  <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %>
+  <!-- <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %> -->
   <%= link_to 'Pick for me', {:controller => "restaurants", :action => "index", :random => true}, class: "btn btn-lg btn-primary" %>
   <% if @filter %>
     <%= link_to "Show all", root_path, class: "btn btn-lg btn-primary" %>
