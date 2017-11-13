@@ -41,7 +41,7 @@ $( document ).ready(function() {
           );
       }
     } else { // only one restaurant to map
-      console.log(coordinates.name)
+      console.log('restaurants_to_map.js: ' + coordinates.name)
       if (coordinates.latitude && coordinates.longitude)
         var marker = L.marker(
           [coordinates.latitude, coordinates.longitude],
@@ -65,5 +65,7 @@ $( document ).ready(function() {
           '<br>' +
           coordinates.price
         );
+
+        mymap.panTo(new L.LatLng(coordinates.latitude, coordinates.longitude));
     }
 });

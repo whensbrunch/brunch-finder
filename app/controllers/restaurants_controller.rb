@@ -2,10 +2,12 @@ class RestaurantsController < ApplicationController
   before_action :force_json, only: [:search, :find]
 
   def index
+
     # Get tags for filter list
     @tags = Tag.all
 
     if params.has_key?(:tag)
+
       # Filter by restaurants
       @restaurants = Restaurant.joins(
         "JOIN
@@ -14,16 +16,29 @@ class RestaurantsController < ApplicationController
              taggings.tag_id = #{params[:tag]}"
       )
       @filter = true
+
     elsif params.has_key?(:restaurant)
+
       # Filter to only that restaurant
-      @restaurants = Restaurant.find(params[:restaurant][:id])
+      @restaurants = Restaurant.find( params[:restaurant][:id] )
       @filter = true
+
+    elsif params.has_key?(:random)
+
+      # Get a random restaurant
+      @restaurants = Restaurant.find(rand(Restaurant.all.length + 1))
+      @filter = true
+
     else
+
       # Return all restaurants
       @restaurants = Restaurant.order('created_at DESC')
       @filter = false
+
     end
+
     @review = current_user.reviews.build if logged_in?
+
   end
 
   def show
