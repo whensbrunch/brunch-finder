@@ -13,12 +13,15 @@ class RestaurantsController < ApplicationController
          WHERE
              taggings.tag_id = #{params[:tag]}"
       )
+      @filter = true
     elsif params.has_key?(:restaurant)
       # Filter to only that restaurant
       @restaurants = Restaurant.find(params[:restaurant][:id])
+      @filter = true
     else
       # Return all restaurants
       @restaurants = Restaurant.order('created_at DESC')
+      @filter = false
     end
     @review = current_user.reviews.build if logged_in?
   end

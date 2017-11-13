@@ -7,6 +7,9 @@
 
   <!-- <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %> -->
   <%= link_to "Add brunch place", new_restaurant_path, class: "btn btn-lg btn-primary" %>
+  <% if @filter %>
+    <%= link_to "Show all", root_path, class: "btn btn-lg btn-primary" %>
+  <% end %>
   <form class="" action="/restaurants" method="get">
     <input type="text" name="restaurant[name]" placeholder="Search for a restaurant...", data-behavior="find", value="">
     <input type="hidden" name="restaurant[id]" id="find_restaurant_id" value="">
