@@ -11,7 +11,7 @@ gem 'turbolinks',     '5.0.1'
 gem 'jbuilder',       '2.7.0'
 gem 'geocoder',       '1.4.4'
 gem 'leaflet-rails',  '1.2.0'
-gem 'bcrypt',         '3.1.11'
+gem 'bcrypt',         '3.1.11', platforms: [:ruby, :x64_mingw]
 gem 'carrierwave',    '1.1.0'
 gem 'mini_magick',    '4.7.0'
 gem 'fog',            '1.40.0'
@@ -19,6 +19,7 @@ gem 'fog',            '1.40.0'
 gem 'faker',          '1.8.4'
 gem 'will_paginate',           '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
+gem 'tzinfo-data',    '1.2017.3'
 
 group :development, :test do
   gem 'sqlite3', '1.3.13'
