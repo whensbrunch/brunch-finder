@@ -26,17 +26,28 @@ $( document ).ready(function() {
           a.setAttribute('href', restaurant_path);
           a.innerHTML = coordinates[i].name;
 
+          rating = 'rating'
           marker.addTo(mymap);
+          console.log('<b>' +
+          a.outerHTML +
+          '</b><br> Rating:' +
+          + coordinates[i].rating +
+          '<br>' +
+          coordinates[i].review_count +
+          '<br>' +
+          coordinates[i].address +
+          '<br>' +
+          coordinates[i].price)
           marker.bindPopup(
             '<b>' +
             a.outerHTML +
-            '</b><br>' +
-            coordinates[i].rating +
-            '<br>' +
+            '</b><br><b>Rating:</br>' +
+            + coordinates[i].rating +
+            '<br> Yelp Reviews: ' +
             coordinates[i].review_count +
-            '<br>' +
+            '<br> Address: ' +
             coordinates[i].address +
-            '<br>' +
+            '<br> Price: ' +
             coordinates[i].price
           );
       }

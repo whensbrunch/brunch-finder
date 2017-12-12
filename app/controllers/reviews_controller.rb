@@ -1,11 +1,14 @@
 class ReviewsController < ApplicationController
   before_action :logged_in_user, only: [:create, :destroy]
   before_action :correct_user,   only: :destroy
+
   def create
     @review = current_user.reviews.build(review_params)
     if @review.save
       flash[:success] = "Review created!"
-      redirect_to root_url
+      session[:return_to] ||= request.referer
+      redirect_to session.delete(:return_to)
+      # redirect_to root_url
     else
       render 'restaurants/index'
     end

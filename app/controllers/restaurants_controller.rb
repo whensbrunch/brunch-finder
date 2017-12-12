@@ -43,6 +43,7 @@ class RestaurantsController < ApplicationController
 
   def show
     @restaurant = Restaurant.find(params[:id])
+    @review = current_user.reviews.build if logged_in?
     @reviews = @restaurant.reviews.paginate(page: params[:page])
   end
 
