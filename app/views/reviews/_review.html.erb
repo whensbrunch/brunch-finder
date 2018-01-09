@@ -1,5 +1,7 @@
 <li id="review-<%= review.id %>">
   <%= link_to gravatar_for(review.user, size: 50), review.user %>
+  <span class="user"><%= link_to review.restaurant.name, review.restaurant %></span>
+  <br>
   <span class="user"><%= link_to review.user.name, review.user %></span>
   <span class="content">
     <%= review.content %>
