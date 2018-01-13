@@ -1,5 +1,4 @@
-Brunch Finder - Buenos Aires
-========
+# Brunch Finder // Buenos Aires
 
 _Find the brunch you deserve_
 
