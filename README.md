@@ -3,7 +3,7 @@ Brunch Finder - Buenos Aires
 
 _Find the brunch you deserve_
 
-![Brunch Finder home page](screenshots/homepage.png "Brunch Finder home page)
+![Brunch Finder home page](screenshots/homepage.png "Brunch Finder home page")
 
 To run the development environment for this project you will need to have [Git](https://git-scm.com/), [Ruby](https://www.ruby-lang.org/en/) and [Rails](http://rubyonrails.org/) installed.
 
