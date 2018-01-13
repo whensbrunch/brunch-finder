@@ -5,7 +5,10 @@ _Find the brunch you deserve_
 
 ![Brunch Finder home page](screenshots/homepage.png "Brunch Finder home page")
 
+The app is live (!) and can be found [here](https://arcane-bayou-17342.herokuapp.com/).
+
 To run the development environment for this project you will need to have [Git](https://git-scm.com/), [Ruby](https://www.ruby-lang.org/en/) and [Rails](http://rubyonrails.org/) installed.
+
 
 ## Table of contents
 
